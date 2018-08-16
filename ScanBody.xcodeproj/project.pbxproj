@@ -15,6 +15,8 @@
 		7829DB0A212553C800AA5E76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7829DB09212553C800AA5E76 /* main.m */; };
 		7829DB14212553C800AA5E76 /* ScanBodyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7829DB13212553C800AA5E76 /* ScanBodyTests.m */; };
 		7829DB1F212553C800AA5E76 /* ScanBodyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7829DB1E212553C800AA5E76 /* ScanBodyUITests.m */; };
+		7829DB312125575100AA5E76 /* ScanBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7829DB302125575100AA5E76 /* ScanBodyView.m */; };
+		F20C180D73A091F15339C1C0 /* libPods-ScanBody.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C88E21EC12D31C00D659BE33 /* libPods-ScanBody.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72A74EC9D4AC49E6CBDDB3F0 /* Pods-ScanBody.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanBody.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScanBody/Pods-ScanBody.release.xcconfig"; sourceTree = "<group>"; };
+		730EF2722BD9A25D04C56E8D /* Pods-ScanBody.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanBody.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanBody/Pods-ScanBody.debug.xcconfig"; sourceTree = "<group>"; };
 		7829DAF7212553C700AA5E76 /* ScanBody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanBody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7829DAFA212553C700AA5E76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7829DAFB212553C700AA5E76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		7829DB1A212553C800AA5E76 /* ScanBodyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanBodyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7829DB1E212553C800AA5E76 /* ScanBodyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanBodyUITests.m; sourceTree = "<group>"; };
 		7829DB20212553C800AA5E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7829DB2F2125575100AA5E76 /* ScanBodyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanBodyView.h; sourceTree = "<group>"; };
+		7829DB302125575100AA5E76 /* ScanBodyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanBodyView.m; sourceTree = "<group>"; };
+		C88E21EC12D31C00D659BE33 /* libPods-ScanBody.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScanBody.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20C180D73A091F15339C1C0 /* libPods-ScanBody.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2099CE9343758FD552FE579D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				730EF2722BD9A25D04C56E8D /* Pods-ScanBody.debug.xcconfig */,
+				72A74EC9D4AC49E6CBDDB3F0 /* Pods-ScanBody.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2D77FAE5835AF5680B50DBF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C88E21EC12D31C00D659BE33 /* libPods-ScanBody.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7829DAEE212553C700AA5E76 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				7829DB12212553C800AA5E76 /* ScanBodyTests */,
 				7829DB1D212553C800AA5E76 /* ScanBodyUITests */,
 				7829DAF8212553C700AA5E76 /* Products */,
+				2099CE9343758FD552FE579D /* Pods */,
+				2D77FAE5835AF5680B50DBF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +132,8 @@
 				7829DAFB212553C700AA5E76 /* AppDelegate.m */,
 				7829DAFD212553C700AA5E76 /* ViewController.h */,
 				7829DAFE212553C700AA5E76 /* ViewController.m */,
+				7829DB2F2125575100AA5E76 /* ScanBodyView.h */,
+				7829DB302125575100AA5E76 /* ScanBodyView.m */,
 				7829DB00212553C700AA5E76 /* Main.storyboard */,
 				7829DB03212553C800AA5E76 /* Assets.xcassets */,
 				7829DB05212553C800AA5E76 /* LaunchScreen.storyboard */,
@@ -139,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7829DB23212553C800AA5E76 /* Build configuration list for PBXNativeTarget "ScanBody" */;
 			buildPhases = (
+				A630B71D31725C32E62FC1E2 /* [CP] Check Pods Manifest.lock */,
 				7829DAF3212553C700AA5E76 /* Sources */,
 				7829DAF4212553C700AA5E76 /* Frameworks */,
 				7829DAF5212553C700AA5E76 /* Resources */,
@@ -257,6 +287,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A630B71D31725C32E62FC1E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScanBody-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7829DAF3212553C700AA5E76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +316,7 @@
 				7829DAFF212553C700AA5E76 /* ViewController.m in Sources */,
 				7829DB0A212553C800AA5E76 /* main.m in Sources */,
 				7829DAFC212553C700AA5E76 /* AppDelegate.m in Sources */,
+				7829DB312125575100AA5E76 /* ScanBodyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +483,7 @@
 		};
 		7829DB24212553C800AA5E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 730EF2722BD9A25D04C56E8D /* Pods-ScanBody.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +500,7 @@
 		};
 		7829DB25212553C800AA5E76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A74EC9D4AC49E6CBDDB3F0 /* Pods-ScanBody.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
