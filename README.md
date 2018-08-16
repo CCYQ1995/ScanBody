@@ -6,7 +6,7 @@
 ##前期准备
 这个动画，需要用到的有：底图，扫描的视图，以及扫描到的部位需要展示的图片。还有就是思路。我们的思路是这样子的：扫描视图为底图的上层，然后做着重复上下移动的动作。之后我们将需要显示的图片添加到扫描的视图中，利用 OC 的视图裁剪等功能实现隐藏；并利用视图从上往下，显示视图从下往下做动画，造成的视觉差来实现我们需要的效果。先放张效果图给给为看官看一下。效果图如下：
 
-![扫描动画效果图](https://img-blog.csdn.net/20180816163639635?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NDWVExOTk1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![扫描动画效果图](https://raw.githubusercontent.com/CCYQ1995/ScanBody/master/ScanBodyGIF.gif)
 
 ##进入正题
 首先我们需要新建一个 View ，取名为：'ScanBodyView'; 用来承载这个功能。其次将我们需要用到的一些控件一个个排布好，我这里采用了 Masonry 的布局。代码如下
